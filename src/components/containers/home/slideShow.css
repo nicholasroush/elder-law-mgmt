@@ -1,0 +1,21 @@
+.slideShow-contain {
+    height: 30rem;
+    white-space: nowrap;
+    transition: ease 2500ms;
+}
+
+.mat {
+    display: inline-block;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.mat img {
+    height: 22rem;
+    width: auto;
+}
+
+.test-one {
+    margin-left: 10rem;
+}
+

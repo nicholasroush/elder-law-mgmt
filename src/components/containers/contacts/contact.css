@@ -1,0 +1,146 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100rem;
+    width: 100%;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.fields h3 {
+    font-size: 2rem;
+}
+
+.contact-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 997;
+    background-color: #fff;
+    opacity: .8;
+    width: 100%;
+    height: 90%;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    border-radius: 4rem;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 998;
+    width: 100%;
+    height: 85%;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.img {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    height: 3rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+    background-color: rgba(219, 217, 217, 0.45);
+}
+
+select {
+    height: 3rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+    background-color: rgba(219, 217, 217, 0.45);
+}
+
+textarea {
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(219, 217, 217, 0.45);
+}
+
+.checkbox {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#check {
+    width: 1rem;
+    height: 1rem;
+}
+
+.checkbox label {
+    font-size: 1.3rem;
+}
+
+.contact-btn {
+    height: 3rem;
+    width: 7rem;
+    background-color: rgb(147,159,47);
+    color: #000000;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .7rem;
+}
+
+.contact-info {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pa-office p {
+    font-size: 1.25rem;
+}
+
+.pa-office h3 {
+    font-size: 1.75rem;
+}
+
+.pa-office {
+    padding: 0 6rem 0 6rem;
+    border: solid black .15rem;
+}
+
+.wv-office {
+    padding: 0 6rem 0 6rem;
+    margin-top: 3rem;
+    border: solid black .15rem;
+}
+
+.wv-office  p {
+    font-size: 1.25rem;
+}
+
+.wv-office h3 {
+    font-size: 1.75rem;
+}
+
+.maps {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.google-maps {
+    border: 0;
+    width: 30rem;
+    height: 22rem;
+}

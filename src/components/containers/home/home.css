@@ -1,0 +1,194 @@
+.body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 17rem 17rem 15rem 15rem 30rem 25rem;
+    width: 100%;
+    justify-items: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.top {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 2;
+    width: 100%;
+    align-items: center;
+}
+
+.pitt-vid {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+}
+
+.top-content {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 36rem;
+    height: 30rem;
+    padding-right: 1rem;
+    margin-left: 3rem;
+    border-radius: 4rem;
+}
+
+.top-content h1 {
+    margin: 3rem 0 0 3rem;
+    width: 20rem;
+}
+
+.top-content p {
+    margin-left: 7rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-left: solid #000 .15rem;
+    padding-left: 1rem;
+}
+
+.mid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    grid-column: 1/ span 7;
+    grid-row: 3 / span 2;
+    width: 100%;
+    color: #ffff;
+}
+
+.mid a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.mid h4 {
+    width: 18rem;
+    margin: auto;
+    line-height: 1.5rem;
+}
+
+.more {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(147,159,47);
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 7.3rem;
+    letter-spacing: .05rem;
+    border-radius: .5rem;
+    margin-top: .6rem;
+}
+
+.mid-content1 {
+    background-image: url('../accounting/account1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+}
+
+.mid-content2 {
+    background-image: url('../legal/legal2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+}
+
+.mid-content3 {
+    background-image: url('../investment/invest2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+}
+
+.mid-content4 {
+    background-image: url('../pension/pension1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 3rem;
+}
+
+.mc-material {
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+}
+
+.mid-icons {
+    height: 4rem;
+    width: 4rem;
+    padding-top: 5rem;
+}
+
+.mc-material:hover {
+    background-color: rgba(147,159,47,.7);
+    color: #000;
+}
+
+.slide-show {
+    background: #F6F5F4;
+    grid-column: 1/ span 7;
+    grid-row: 5;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bottom {
+    grid-column: 1/ span 7;
+    grid-row: 6;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.bottom-icon {
+    height: 10rem;
+    width: auto;
+    color: #939F2F;
+}
+
+.bottom p {
+    font-size: 1.5rem;
+    width: 23rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .more {
+      visibility: visible;
+    }
+  }

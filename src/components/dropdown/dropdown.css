@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+}
+
+.dropdown-menu {
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 13rem;
+    height: 15rem;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border: solid #000 1px;
+}
+
+.dropdown-menu li {
+    padding-bottom: 1rem;
+}
+
+.dropdown-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    list-style: none;
+}

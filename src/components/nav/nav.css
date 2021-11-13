@@ -1,0 +1,42 @@
+.logo {
+    justify-content: flex-start;
+    width: 31rem;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50rem;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    width: 3rem;
+    padding-top: 1.4rem;
+}
+
+.aarow {
+    padding-left: 1.3rem;
+}
