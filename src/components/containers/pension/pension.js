@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pen from './pension3.jpg';
+import pen from '../../../imgs/pension3.jpg';
 import { FaAngleDown } from 'react-icons/fa';
 import './pension.css';
 
@@ -29,7 +29,7 @@ export function Pension() {
     
     return (
         <div className='svc'>
-            <div className='svc-head'>
+            <div className='svc-head-pen'>
                 <img src={pen} alt='Pension Page Header' />
             </div>
             <div className='svc-body pen'>
@@ -48,7 +48,6 @@ export function Pension() {
                             <li><a href='/team#AnthonySunseri'>Anthony Sunseri</a></li>
                             <li><a href='/team#KennethSummit'>Kenneth Summit</a></li>
                             <li><a href='/team#GeorgeSweeney'>George Scott Sweeney</a></li>
-                            <li><a href='/team#DustinMiller'>Dustin Miller</a></li>
                         </ul>
                     </div>
                     <div className='svc-resources'>

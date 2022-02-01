@@ -10,9 +10,12 @@ ul {
     width: 13rem;
     height: 15rem;
     position: absolute;
+    top: 34rem;
     background-color: rgb(255, 255, 255);
     padding: 1.5rem;
     border: solid #000 1px;
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 .dropdown-menu li {

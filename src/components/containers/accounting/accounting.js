@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './accounting.css';
-import acc from './account4.jpg'
+import acc from '../../../imgs/account4.jpg';
 import { FaAngleDown } from 'react-icons/fa';
 
 
@@ -29,7 +29,7 @@ export function Accounting() {
     
     return (
         <div className='svc'>
-            <div className='svc-head'>
+            <div className='svc-head-acc'>
                 <img src={acc} alt='Accounting Page Header' />
             </div>
             <div className='svc-body acc-tax'>

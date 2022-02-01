@@ -1,19 +1,50 @@
-.logo {
-    justify-content: flex-start;
-    width: 31rem;
+.nav-main {
+    width: 100%;
+    height: auto;
+    display: unset;
+}
+
+.logo-contain {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: url('../../imgs/lawteam.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: -2;
+}
+
+.logo, .ecm-logo {
+    margin-bottom: 3rem;
 }
 
 .logo img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 9rem;
+}
+
+.ecm-logo img {
+    width: auto;
+    height: 7rem;
+}
+
+.nav-title {
+    color: rgb(246,245,244);
+    margin-top: 22rem;
+    font-size: 3rem;
+    -webkit-text-stroke: .25rem black;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    padding: 2rem;
+    background-color: #67B87E;
 }
 
 .nav-links {
@@ -21,22 +52,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50rem;
+    width: 80%;
+    height: 2rem;
 }
 
-li:hover {
-    text-decoration: underline;
+.nav-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 10rem;
+}
+
+.nav-li:hover {
+    background-color: #539666;
+    text-decoration: none;
 }
 
 .dropdown:hover {
     cursor: pointer;
 }
 
-.dropdown {
-    width: 3rem;
-    padding-top: 1.4rem;
-}
-
-.aarow {
-    padding-left: 1.3rem;
+li:hover {
+    text-decoration: underline;
 }

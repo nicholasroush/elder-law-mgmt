@@ -1,14 +1,11 @@
 import './App.css';
 import { Nav } from './components/nav/nav';
 import { Home } from './components/containers/home/home';
+import { Services } from './components/containers/services/services';
 import { Workshops } from './components/containers/workshops/workshops';
 import { Team } from './components/containers/team/team';
 import { Resources } from './components/containers/resources/resources';
 import { Contact } from './components/containers/contacts/contact';
-import { Accounting } from './components/containers/accounting/accounting';
-import { Investment } from './components/containers/investment/investment';
-import { Legal } from './components/containers/legal/legal';
-import { Pension } from './components/containers/pension/pension';
 import { Privacy } from './components/nav/footerLinks/privacy';
 import { Disclaimer } from './components/nav/footerLinks/disclaimer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -21,10 +18,7 @@ function App() {
         <Nav />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/accounting' component={Accounting} />
-          <Route path='/investment' component={Investment} />
-          <Route path='/legal' component={Legal} />
-          <Route path='/pension' component={Pension} />
+          <Route path='/services'  component={Services} />
           <Route path='/workshops'  component={Workshops} />
           <Route path='/team'  component={Team} />
           <Route path='/resources'  component={Resources} />

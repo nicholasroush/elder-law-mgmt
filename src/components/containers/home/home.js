@@ -6,14 +6,14 @@ import { FaRegMoneyBillAlt } from 'react-icons/fa';
 import { GiAlarmClock } from 'react-icons/gi';
 import { BsCalendarDate } from 'react-icons/bs';
 import { GiNewspaper } from 'react-icons/gi';
-import pittVid from './pitt-vid3.mp4';
+import pittVid from '../../../imgs/pitt-vid3.mp4';
 import { FormPopup } from './formPopup';
 import { SlideShow } from './slideShow';
 
 export function Home() {
 
   return (
-    <div className='body'>
+    <div className='home'>
       <FormPopup />
       <div className='top'>
         <video autoPlay muted loop className="pitt-vid">
@@ -25,7 +25,7 @@ export function Home() {
         </div>
       </div>
       <div className='mid'>
-        <a href='/accounting'>
+        <a href='/services#account'>
           <div className='mid-content1'>
             <div className='mc-material'>
               <GiCalculator className='mid-icons' />
@@ -37,7 +37,7 @@ export function Home() {
             </div>
           </div>
         </a>
-        <a href='/legal'>
+        <a href='/services#legal'>
           <div className='mid-content2'>
             <div className='mc-material'>
               <GiScales className='mid-icons' />
@@ -49,7 +49,7 @@ export function Home() {
             </div>
           </div>
         </a>
-        <a href='/investment'>
+        <a href='/services#invest'>
           <div className='mid-content3'>
             <div className='mc-material'>
               <FaRegMoneyBillAlt className='mid-icons' />
@@ -61,7 +61,7 @@ export function Home() {
             </div>
           </div>
         </a>
-        <a href='/pension'>
+        <a href='/services#pension'>
           <div className='mid-content4'>
             <div className='mc-material'>
               <GiAlarmClock className='mid-icons' />

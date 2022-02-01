@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -15,20 +16,86 @@ code {
     monospace;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (min-width: 2561px) {
+  html {
+    width: 75%;
+  }
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1680px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
   html {
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   html {
     font-size: 8px;
+    scroll-snap-type: none;
+  }
+
+  .App .account_bg, 
+  .App .invest_bg, 
+  .App .legal_bg, 
+  .App .pension_bg {
+    background-attachment: scroll;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 480px) {
   html {
-    font-size: 5px;
+    font-size: 6px;
+    scroll-snap-type: none;
+  }
+
+  .App .account_bg, 
+  .App .invest_bg, 
+  .App .legal_bg, 
+  .App .pension_bg {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  html {
+    font-size: 4px;
+    scroll-snap-type: none;
+  }
+
+  .App .account_bg, 
+  .App .invest_bg, 
+  .App .legal_bg, 
+  .App .pension_bg {
+    background-attachment: scroll;
   }
 }

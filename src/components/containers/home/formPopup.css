@@ -12,59 +12,112 @@
 }
 
 .popup-content {
-    background-color: #f6f5f4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: rgb(234,237,246);
     margin: auto;
     padding-bottom: 1.5rem;
-    border: .2rem solid #888;
-    border-radius: 1.2rem;
     width: 40%;
+    height: 30rem;
     text-align: center;
 }
 
-.popup-content h3 {
-    display: none;
+.popup-content h2 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 1.3rem;
 }
 
-.popup-content h2 {
-    background-color: #888;
-    width: auto;
-    height: 100%;
-    margin-top: 0;
-    padding: 2rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+.popup-content h4 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin-top: 3rem;
+    width: 55%;
+    justify-self: center;
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+.popup-content form {
+    display: block;
+    margin-top: 7rem;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .popup-content input {
-    height: 1.5rem;
-    width: 20rem;
+    height: 1rem;
+    width: 80%;
     margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.popup-content select {
-    height: 1.5rem;
-    width: 20rem;
-    font-size: 1rem;
+    font-size: .7rem;
+    background-color: rgb(234,237,246);
 }
 
 .popup-content textarea {
-    height: 8rem;
-    width: 25rem;
-    font-size: 1rem;
+    height: 6rem;
+    width: 80%;
+    font-size: .7rem;
+    background-color: rgb(234,237,246);
+}
+
+.popup-content .message {
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.popup-content select {
+    height: 1rem;
+    width: 80%;
+    background-color: rgb(234,237,246);
+    font-size: .7rem;
+}
+
+.popup-content img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 85%;
+    height: auto;
+    align-self: center;
+    margin-top: 6rem;
+}
+
+.popup-content .checkbox label {
+    font-size: .9rem;
+    padding-left: .5rem;
+}
+
+.popup-content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.75rem;
+}
+
+.popup-content .contact-btn {
+    height: 2rem;
+    width: 80%;
+    font-size: .8rem;
+    margin-left: 0;
+    margin-right: 2rem;
 }
   
 .close {
-    color: #fff;
+    color: #000;
     float: right;
+    height: fit-content;
     font-size: 2rem;
     font-weight: bold;
     padding-right: .5rem;
+    justify-self: flex-end;
+    grid-column: 2;
+    grid-row: 1;
+    z-index: 1;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgba(0,0,0,0.4);
     text-decoration: none;
     cursor: pointer;
 }

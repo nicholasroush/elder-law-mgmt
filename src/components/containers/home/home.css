@@ -1,42 +1,38 @@
-.body {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 17rem 17rem 15rem 15rem 30rem 25rem;
-    width: 100%;
-    justify-items: center;
+.home {
     margin: auto;
-    overflow: hidden;
+    width: 100%;
 }
 
 .top {
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    grid-column: 1 / span 7;
-    grid-row: 1 / span 2;
-    width: 100%;
-    align-items: center;
+    grid-template-rows: 1fr;
+    background-color: #fff;
 }
 
 .pitt-vid {
-    grid-row: 1;
-    grid-column: 1;
     width: 100%;
     height: auto;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .top-content {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 998;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     background-color: rgba(255, 255, 255, 0.9);
     width: 36rem;
     height: 30rem;
     padding-right: 1rem;
-    margin-left: 3rem;
-    border-radius: 4rem;
+    border-radius: 1rem;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .top-content h1 {
@@ -59,10 +55,10 @@
     align-content: center;
     justify-content: space-around;
     text-align: center;
-    grid-column: 1/ span 7;
-    grid-row: 3 / span 2;
     width: 100%;
     color: #ffff;
+    padding: 4rem 0 4rem 0;
+    background-color: #fff;
 }
 
 .mid a {
@@ -83,7 +79,7 @@
     align-items: center;
     height: 2rem;
     width: 5rem;
-    background-color: rgb(147,159,47);
+    background-color: rgb(184, 105, 105);
     color: #000000;
     font-size: 1rem;
     font-weight: bold;
@@ -94,46 +90,46 @@
 }
 
 .mid-content1 {
-    background-image: url('../accounting/account1.jpg');
+    background-image: url('../../../imgs/account1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 20rem;
     height: 20rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .mid-content2 {
-    background-image: url('../legal/legal2.jpg');
+    background-image: url('../../../imgs/legal2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 20rem;
     height: 20rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .mid-content3 {
-    background-image: url('../investment/invest2.jpg');
+    background-image: url('../../../imgs/invest2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 20rem;
     height: 20rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .mid-content4 {
-    background-image: url('../pension/pension1.jpg');
+    background-image: url('../../../imgs/pension1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 20rem;
     height: 20rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .mc-material {
     background-color: rgba(0, 0, 0, 0.459);
     width: 100%;
     height: 100%;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .mid-icons {
@@ -143,26 +139,23 @@
 }
 
 .mc-material:hover {
-    background-color: rgba(147,159,47,.7);
+    background-color: rgba(171, 255, 195, .7);
     color: #000;
 }
 
 .slide-show {
     background: #F6F5F4;
-    grid-column: 1/ span 7;
-    grid-row: 5;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     overflow: hidden;
 }
 
 .bottom {
-    grid-column: 1/ span 7;
-    grid-row: 6;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 0 3rem 0;
+    background-color: #fff;
 }
 
 .calendar {
@@ -176,7 +169,7 @@
 .bottom-icon {
     height: 10rem;
     width: auto;
-    color: #939F2F;
+    color: #B8795F;
 }
 
 .bottom p {
@@ -187,7 +180,7 @@
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
     .more {
       visibility: visible;
     }

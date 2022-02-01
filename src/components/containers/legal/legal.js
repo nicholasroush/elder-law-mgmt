@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import leg from './legal3.jpg';
 import { FaAngleDown } from 'react-icons/fa';
 import './legal.css';
 
@@ -29,8 +28,8 @@ export function Legal() {
     
     return (
         <div className='svc'>
-            <div className='svc-head'>
-                <img src={leg} alt='Estate and legal Page Header' />
+            <div className='svc-head-leg'>
+                
             </div>
             <div className='svc-body est-leg'>
                 <div className='svc-content est'>
@@ -43,7 +42,7 @@ export function Legal() {
                     <h3>Be Prepared</h3>
                     <p>In our contentious society, many disputes, no matter how trivial, often cost too much and take too long to resolve. Be informed before you have to go to court. It could save a lot of unnecessary fees and your valuable time. Please visit our affiliated law firm, Jones & Associates, which not only advises but also takes the mystery out of the legal system, allowing you to move forward with confidence. Why not be prepared for the unknown?</p>
                 </div>
-                <div className='svc-dropdowns'>
+                <div className='svc-dropdowns-leg'>
                     <div className='svc-reps-container' onClick={handleClick} style={border}>
                         Representatives 
                         <FaAngleDown style={arrow} className='svc-icon reps' />
@@ -55,6 +54,7 @@ export function Legal() {
                             <li><a href='/team#PennyMahoney'>Penny S. Mahoney</a></li>
                             <li><a href='/team#ChelseaSteck'>Chelsea Steck</a></li>
                             <li><a href='/team#MarkFaynor'>Mark Faynor Jr.</a></li>
+                            <li><a href='/team#DustinMiller'>Dustin Miller</a></li>
                         </ul>
                     </div>
                     <div className='svc-resources'>

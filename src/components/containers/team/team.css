@@ -1,108 +1,169 @@
 .team-main {
     display: flex;
     flex-direction: column;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 40rem;
-    width: 100%;
-    align-items: center;
-    background: linear-gradient(270deg, rgba(103,103,103, 0) 0%, rgba(51,51,51, 0) 35%, rgba(0,0,0,.8) 100%);
-}
-
-.our-team {
-    z-index: 998;
-    color: white;
-    height: 13rem;
-    width: 44rem;
-    grid-column: 1;
-    grid-row: 1;
-    padding: 1rem;
-    margin-left: 3rem;
-    margin-top: -14rem;
-}
-
-.our-team h2 {
-    font-size: 6rem;
-    margin: 0;
-}
-
-.our-team h3 {
-    font-size: 2rem;
-    margin: 0;
-    font-style: italic;
-    font-weight: normal;
-}
-
-.our-team p {
-    font-size: 1.8rem;
-    margin-top: 3rem;
-    line-height: 2.3rem;
-}
-
-.header a {
-    text-decoration: none;
-}
-
-.contact-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    width: 10rem;
-    background-color: rgb(147,159,47);
-    color: #000000;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: -12rem;
-    margin-left: 4rem;
-    border-radius: .7rem;
-}
-
-.contact-us:active {
-    border: none;
-}
-
-.team-head-bg {
-    width: 100%;
-    height: 40rem;
-    grid-column: 1;
-    grid-row: 1;
-    z-index: -1;
-}
-
-.department-nav-head {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0;
-    background-color: #c4bebe;
-    padding-top: 1rem;
+    background-color: #fff;
 }
 
 .department-nav {
     font-size: 1.5rem;
-    top: 0px;
     text-align: center;
-    position: sticky;
-    background-color: #c4bebe;
-    padding: 2rem;
+    position: fixed;
+    bottom: -3rem;
     border-bottom: groove 2px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.department-nav:hover {
+    bottom: 0;
+}
+
+.tp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 10rem;
+    height: 5rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.tp-inv::before {
+    border-top: 4.2rem solid transparent;
+    border-right: 2rem solid #67B87E;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: -2rem;
+    z-index: 1;
+}
+
+.tp-inv {
+    background-color: #67B87E;
+}
+
+.tp-inv::after {
+    border-top: 4.2rem solid transparent;
+    border-left: 2rem solid #67B87E;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: 14rem;
+    z-index: 1;
+}
+
+.tp-acc::before {
+    border-top: 4.2rem solid transparent;
+    border-right: 2rem solid #70cc8a;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: -2rem;
+    z-index: -1;
+}
+
+.tp-acc {
+    background-color: #70cc8a;
+}
+
+.tp-acc::after {
+    border-top: 4.2rem solid transparent;
+    border-left: 2rem solid #70cc8a;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: 14rem;
+    z-index: -1;
+}
+
+.tp-leg::before {
+    border-top: 4.2rem solid transparent;
+    border-right: 2rem solid #67B87E;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: -2rem;
+    z-index: 1;
+}
+
+.tp-leg {
+    background-color: #67B87E;
+}
+
+.tp-leg::after {
+    border-top: 4.2rem solid transparent;
+    border-left: 2rem solid #67B87E;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: 14rem;
+    z-index: 1;
+}
+
+.tp-nav::before {
+    border-top: 4.2rem solid transparent;
+    border-right: 2rem solid #70cc8a;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: -2rem;
+    z-index: -1;
+}
+
+.tp-nav {
+    background-color: #70cc8a;
+}
+
+.tp-nav::after {
+    border-top: 4.2rem solid transparent;
+    border-left: 2rem solid #70cc8a;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: .8rem;
+    left: 14rem;
+    z-index: -1;
 }
 
 .department-nav a {
     text-decoration: none;
     padding-left: 2rem;
     padding-right: 2rem;
-    color: rgb(11,0,128);
 }
 
 .department-nav a:hover {
     text-decoration: underline;
-    color: #000;
+}
+
+.team-members {
+    margin-top: 4rem;
+}
+
+.dep-head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: .2rem outset;
+    width: 70%;
+    margin: auto;
 }
 
 .bio-pic {
@@ -110,50 +171,182 @@
     width: 10rem;
 }
 
-.team-members h1 {
-    text-align: center;
-    margin: 1rem 0 3rem 11rem;
-    border-bottom: groove 6px;
-    padding: 2rem;
-    width: 70%;
+.bio p {
+    line-height: 1.75rem;
+}
+
+.person {
+    padding-right: 1rem;
 }
 
 .invest-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem 20rem 20rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.invest-members h3 {
+    width: 11rem;
+    margin: 0;
+}
+
+.invest-members .bio {
+    width: 80%;
+    height: auto;
+}
+
+.inv-one {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding-left: 2rem;
+}
+
+.inv-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding-left: 2rem;
+}
+
+.inv-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    padding-left: 2rem;
 }
 
 .accounting-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem 20rem 20rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.accounting-members h3 {
+    width: 11rem;
+    margin: 0;
+}
+
+.accounting-members .bio {
+    width: 80%;
+    height: auto;
+}
+
+.acc-one {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding-left: 2rem;
+}
+
+.acc-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding-left: 2rem;
+}
+
+.acc-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    padding-left: 2rem;
 }
 
 .legal-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 20rem);
+    margin: 2rem 0 2rem 0;
+}
+
+.legal-members h3 {
+    width: 11rem;
+    margin: 0;
+}
+
+.legal-members .bio {
+    width: 80%;
+    height: auto;
+}
+
+.leg-one {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding-left: 2rem;
 }
 
-.mem {
-    width: 30rem;
-    height: 40rem;
-    text-align: center;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 2rem;
+.leg-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding-left: 2rem;
 }
 
-.mem-bg {
-    background-color: rgba(147,159,47,.7);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
+.leg-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    padding-left: 2rem;
+}
+
+.leg-four {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    padding-left: 2rem;
+}
+
+.leg-five {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    padding-left: 2rem;
+}
+
+.leg-six {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    padding-left: 2rem;
 }
 

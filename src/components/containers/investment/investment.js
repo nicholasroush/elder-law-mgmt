@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import inv from './invest3.jpg';
 import { FaAngleDown } from 'react-icons/fa';
+import inv from '../../../imgs/invest3.jpg';
 import './investment.css';
 
 
@@ -29,8 +29,8 @@ export function Investment() {
     
     return (
         <div className='svc'>
-            <div className='svc-head'>
-                <img src={inv} alt='Investment Page Header' />
+            <div className='svc-head-inv'>
+            <img src={inv} alt='Investment Page Header' />
             </div>
             <div className='svc-body inv'>
                 <div className='svc-content invest'>
@@ -48,7 +48,6 @@ export function Investment() {
                             <li><a href='/team#AnthonySunseri'>Anthony Sunseri</a></li>
                             <li><a href='/team#KennethSummit'>Kenneth Summit</a></li>
                             <li><a href='/team#GeorgeSweeney'>George Scott Sweeney</a></li>
-                            <li><a href='/team#DustinMiller'>Dustin Miller</a></li>
                         </ul>
                     </div>
                     <div className='svc-resources'>
