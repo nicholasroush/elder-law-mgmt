@@ -1,5 +1,10 @@
 .disclaimer-main {
+    background-color: #fff;
+}
+
+.disclaimer-content {
     width: 70%;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     line-height: 3rem;
     margin: auto;
