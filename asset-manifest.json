@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/elder-law-mgmt/static/css/main.c29cad5a.chunk.css",
+    "main.js": "/elder-law-mgmt/static/js/main.64e68090.chunk.js",
+    "main.js.map": "/elder-law-mgmt/static/js/main.64e68090.chunk.js.map",
+    "runtime-main.js": "/elder-law-mgmt/static/js/runtime-main.b4e51f7c.js",
+    "runtime-main.js.map": "/elder-law-mgmt/static/js/runtime-main.b4e51f7c.js.map",
+    "static/js/2.83541271.chunk.js": "/elder-law-mgmt/static/js/2.83541271.chunk.js",
+    "static/js/2.83541271.chunk.js.map": "/elder-law-mgmt/static/js/2.83541271.chunk.js.map",
+    "static/js/3.cae657a9.chunk.js": "/elder-law-mgmt/static/js/3.cae657a9.chunk.js",
+    "static/js/3.cae657a9.chunk.js.map": "/elder-law-mgmt/static/js/3.cae657a9.chunk.js.map",
+    "index.html": "/elder-law-mgmt/index.html",
+    "static/css/main.c29cad5a.chunk.css.map": "/elder-law-mgmt/static/css/main.c29cad5a.chunk.css.map",
+    "static/js/2.83541271.chunk.js.LICENSE.txt": "/elder-law-mgmt/static/js/2.83541271.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/elder-law-mgmt/static/media/pension1.83f88bbd.jpg",
+    "static/media/services.css": "/elder-law-mgmt/static/media/pension_bg.03072ad6.jpg",
+    "static/media/ecm-mobile.bbd51bab.png": "/elder-law-mgmt/static/media/ecm-mobile.bbd51bab.png",
+    "static/media/nav.css": "/elder-law-mgmt/static/media/lawteam.5acd81c8.png",
+    "static/media/pitt-vid3.49f49d46.mp4": "/elder-law-mgmt/static/media/pitt-vid3.49f49d46.mp4",
+    "static/media/temp-popup-img.d641fd3a.jpg": "/elder-law-mgmt/static/media/temp-popup-img.d641fd3a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4e51f7c.js",
+    "static/js/2.83541271.chunk.js",
+    "static/css/main.c29cad5a.chunk.css",
+    "static/js/main.64e68090.chunk.js"
+  ]
+}
